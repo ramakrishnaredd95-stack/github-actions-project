@@ -1,9 +1,8 @@
-name: First_workflow
+name: second_workflow
 on: 
-  push:
-    branches:
-      - main
-    # workflow_dispatch
+    push:
+        branches:
+            - main
 jobs:
     first-job:
         runs-on: ubuntu-latest

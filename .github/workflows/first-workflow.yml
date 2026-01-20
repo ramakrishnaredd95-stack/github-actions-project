@@ -1,9 +1,5 @@
 name: First_workflow
-on: 
-  push:
-    branches:
-      - main
-    # workflow_dispatch
+on: workflow_dispatch
 jobs:
     first-job:
         runs-on: ubuntu-latest
@@ -14,3 +10,10 @@ jobs:
               run: |
                 echo "This is my first GitHub Action"
                 echo "Workflow executed successfully"
+            - name: Display Demo File Content
+              run: cat Demo.txt
+            - name: List Current Directory
+              run: ls -la
+            - name: Show Current Date and Time
+              run: date
+            
